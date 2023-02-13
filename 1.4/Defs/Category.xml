@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <CombatExtended.AmmoCategoryDef>
+        <defName>SpecialAP</defName>
+        <label>armor-piercing special</label>
+        <labelShort>AP-S</labelShort>
+        <description>Features an even denser penertator core, further improving armor penetration.</description>
+    </CombatExtended.AmmoCategoryDef>
+</Defs>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- Recipe cost conversion formula
+    AP-S Steel = Base * 0.7    rounded to the nearest int
+    AP-S Uranium = Base * 0.1  rounded to the nearest int
+    AP-S Chemfuel = Base * 0.1 rounded to the nearest int
+    Work amount = Base * 1.5 -->
+
+    <!-- =============== Pistol Generic =============== -->
+
+    <ThingDef Class="CombatExtended.AmmoDef" ParentName="AmmoPistolBase">
+		<defName>Ammo_Pistol_APS</defName>
+		<label>pistol cartridge (AP-S)</label>
+		<graphicData>
+			<texPath>Ammo/APS</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.06</MarketValue>
+		</statBases>
+		<ammoClass>SpecialAP</ammoClass>
+		<cookOffProjectile>Bullet_9x19mmPara_APS</cookOffProjectile>
+	</ThingDef>
+
+    <RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_Pistol_APS</defName>
+		<label>make pistol (AP-S) cartridge x500</label>
+		<description>Craft 500 pistol (AP-S) cartridges.</description>
+		<jobString>Making pistol (AP-S) cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+            <li>
+				<filter>
+					<thingDefs>
+						<li>Uranium</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+            <li>
+				<filter>
+					<thingDefs>
+						<li>Chemfuel</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+                <li>Uranium</li>
+                <li>Chemfuel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_Pistol_APS>500</Ammo_Pistol_APS>
+		</products>
+		<workAmount>2100</workAmount>
+	</RecipeDef>
+
+    <!-- =============== Revolver Generic =============== -->
+
+    <ThingDef Class="CombatExtended.AmmoDef" ParentName="AmmoPistomMagnum">
+		<defName>Ammo_PistolMagnum_APS</defName>
+		<label>magnum pistol cartridge (AP-S)</label>
+		<graphicData>
+			<texPath>Ammo/APS</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.1</MarketValue>
+		</statBases>
+		<ammoClass>SpecialAP</ammoClass>
+		<cookOffProjectile>Bullet_44Magnum_APS</cookOffProjectile>
+	</ThingDef>
+
+    <RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_PistolMagnum_APS</defName>
+		<label>make magnum pistol (AP-S) cartridge x500</label>
+		<description>Craft 500 magnum pistol (AP-S) cartridges.</description>
+		<jobString>Making magnum pistol (AP-S) cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>17</count>
+			</li>
+            <li>
+				<filter>
+					<thingDefs>
+						<li>Uranium</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+            <li>
+				<filter>
+					<thingDefs>
+						<li>Chemfuel</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+                <li>Uranium</li>
+                <li>Chemfuel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_PistolMagnum_APS>500</Ammo_PistolMagnum_APS>
+		</products>
+		<workAmount>3600</workAmount>
+	</RecipeDef>
+</Defs>
