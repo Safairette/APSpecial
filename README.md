@@ -12,7 +12,7 @@ Uses the following formulas for the stat conversion:
 All recipes
 - Steel - AP steel cost * 0.7
 - Uranium - AP steel cost * 0.1
-- CHemfuel - AP steel cost * 0.1
+- Chemfuel - AP steel cost * 0.1
 
 Regular calibers
 - RHA - AP RHA * 1.5, rounded to int
