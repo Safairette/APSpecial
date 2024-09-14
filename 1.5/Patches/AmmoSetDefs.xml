@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!--Adds the created bullets to the existing CE ammosets-->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_75FK"]/ammoTypes</xpath>
+		<value>
+			<Ammo_75FK_APS>Bullet_75FK_APS</Ammo_75FK_APS>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_10mmAuto"]/ammoTypes</xpath>
+		<value>
+			<Ammo_10mmAuto_APS>Bullet_10mmAuto_APS</Ammo_10mmAuto_APS>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_13mmGyrojet"]/ammoTypes</xpath>
+		<value>
+			<Ammo_13mmGyrojet_APS>Bullet_13mmGyrojet_APS</Ammo_13mmGyrojet_APS>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_22LR"]/ammoTypes</xpath>
+		<value>
+			<Ammo_22LR_APS>Bullet_22LR_APS</Ammo_22LR_APS>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_25ACP"]/ammoTypes</xpath>
+		<value>
+			<Ammo_25ACP_APS>Bullet_25ACP_APS</Ammo_25ACP_APS>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_32ACP"]/ammoTypes</xpath>
+		<value>
+			<Ammo_32ACP_APS>Bullet_32ACP_APS</Ammo_32ACP_APS>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_357Magnum"]/ammoTypes</xpath>
+		<value>
+			<Ammo_357Magnum_APS>Bullet_357Magnum_APS</Ammo_357Magnum_APS>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_357SIG"]/ammoTypes</xpath>
+		<value>
+			<Ammo_357SIG_APS>Bullet_357SIG_APS</Ammo_357SIG_APS>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_380ACP"]/ammoTypes</xpath>
+		<value>
+			<Ammo_380ACP_APS>Bullet_380ACP_APS</Ammo_380ACP_APS>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_38ACP"]/ammoTypes</xpath>
+		<value>
+			<Ammo_38ACP_APS>Bullet_38ACP_APS</Ammo_38ACP_APS>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_38Special"]/ammoTypes</xpath>
+		<value>
+			<Ammo_38Special_APS>Bullet_38Special_APS</Ammo_38Special_APS>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_38Super"]/ammoTypes</xpath>
+		<value>
+			<Ammo_38Super_APS>Bullet_38Super_APS</Ammo_38Super_APS>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_38SW"]/ammoTypes</xpath>
+		<value>
+			<Ammo_38SW_APS>Bullet_38SW_APS</Ammo_38SW_APS>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_40SW"]/ammoTypes</xpath>
+		<value>
+			<Ammo_40SW_APS>Bullet_40SW_APS</Ammo_40SW_APS>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_41Rimfire"]/ammoTypes</xpath>
+		<value>
+			<Ammo_41Rimfire_APS>Bullet_41Rimfire_APS</Ammo_41Rimfire_APS>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_44Magnum"]/ammoTypes</xpath>
+		<value>
+			<Ammo_44Magnum_APS>Bullet_44Magnum_APS</Ammo_44Magnum_APS>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_44SWSpecial"]/ammoTypes</xpath>
+		<value>
+			<Ammo_44SWSpecial_APS>Bullet_44SWSpecial_APS</Ammo_44SWSpecial_APS>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_454Casull"]/ammoTypes</xpath>
+		<value>
+			<Ammo_454Casull_APS>Bullet_454Casull_APS</Ammo_454Casull_APS>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_455Webley"]/ammoTypes</xpath>
+		<value>
+			<Ammo_455Webley_APS>Bullet_455Webley_APS</Ammo_455Webley_APS>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_45ACP"]/ammoTypes</xpath>
+		<value>
+			<Ammo_45ACP_APS>Bullet_45ACP_APS</Ammo_45ACP_APS>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_45Colt"]/ammoTypes</xpath>
+		<value>
+			<Ammo_45Colt_APS>Bullet_45Colt_APS</Ammo_45Colt_APS>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_45Colt410Bore"]/ammoTypes</xpath>
+		<value>
+			<Ammo_45Colt_APS>Bullet_45Colt_APS</Ammo_45Colt_APS>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_45Colt410Bore_SB"]/ammoTypes</xpath>
+		<value>
+			<Ammo_45Colt_APS>Bullet_45Colt_APS</Ammo_45Colt_APS>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_45Schofield"]/ammoTypes</xpath>
+		<value>
+			<Ammo_45Schofield_APS>Bullet_45Schofield_APS</Ammo_45Schofield_APS>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_46x30mm"]/ammoTypes</xpath>
+		<value>
+			<Ammo_46x30mm_APS>Bullet_46x30mm_APS</Ammo_46x30mm_APS>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_500SWMagnum"]/ammoTypes</xpath>
+		<value>
+			<Ammo_500SWMagnum_APS>Bullet_500SWMagnum_APS</Ammo_500SWMagnum_APS>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_50AE"]/ammoTypes</xpath>
+		<value>
+			<Ammo_50AE_APS>Bullet_50AE_APS</Ammo_50AE_APS>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_58x21mmDAP92"]/ammoTypes</xpath>
+		<value>
+			<Ammo_58x21mmDAP92_APS>Bullet_58x21mmDAP92_APS</Ammo_58x21mmDAP92_APS>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_762x25mmTokarev"]/ammoTypes</xpath>
+		<value>
+			<Ammo_762x25mmTokarev_APS>Bullet_762x25mmTokarev_APS</Ammo_762x25mmTokarev_APS>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_762x38mmR"]/ammoTypes</xpath>
+		<value>
+			<Ammo_762x38mmR_APS>Bullet_762x38mmR_APS</Ammo_762x38mmR_APS>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_763x25mmMauser"]/ammoTypes</xpath>
+		<value>
+			<Ammo_763x25mmMauser_APS>Bullet_763x25mmMauser_APS</Ammo_763x25mmMauser_APS>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_765x20mmLongue"]/ammoTypes</xpath>
+		<value>
+			<Ammo_765x20mmLongue_APS>Bullet_765x20mmLongue_APS</Ammo_765x20mmLongue_APS>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_8x22mmNambu"]/ammoTypes</xpath>
+		<value>
+			<Ammo_8x22mmNambu_APS>Bullet_8x22mmNambu_APS</Ammo_8x22mmNambu_APS>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_9x18mmMakarov"]/ammoTypes</xpath>
+		<value>
+			<Ammo_9x18mmMakarov_APS>Bullet_9x18mmMakarov_APS</Ammo_9x18mmMakarov_APS>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_9x19mmPara"]/ammoTypes</xpath>
+		<value>
+			<Ammo_9x19mmPara_APS>Bullet_9x19mmPara_APS</Ammo_9x19mmPara_APS>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_9x19mmParaSD"]/ammoTypes</xpath>
+		<value>
+			<Ammo_9x19mmPara_APS>Bullet_9x19mmParaSD_APS</Ammo_9x19mmPara_APS>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_9x21mmGyurza"]/ammoTypes</xpath>
+		<value>
+			<Ammo_9x21mmGyurza_APS>Bullet_9x21mmGyurza_APS</Ammo_9x21mmGyurza_APS>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_FN57x28mm"]/ammoTypes</xpath>
+		<value>
+			<Ammo_FN57x28mm_APS>Bullet_FN57x28mm_APS</Ammo_FN57x28mm_APS>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_22Short"]/ammoTypes</xpath>
+		<value>
+			<Ammo_22Short_APS>Bullet_22Short_APS</Ammo_22Short_APS>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_44Magnum_HV"]/ammoTypes</xpath>
+		<value>
+			<Ammo_44Magnum_APS>Bullet_44Magnum_HV_APS</Ammo_44Magnum_APS>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_45Colt_HV"]/ammoTypes</xpath>
+		<value>
+			<Ammo_45Colt_APS>Bullet_45Colt_HV_APS</Ammo_45Colt_APS>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_460SWMagnum"]/ammoTypes</xpath>
+		<value>
+			<Ammo_460SWMagnum_APS>Bullet_460SWMagnum_APS</Ammo_460SWMagnum_APS>	
+		</value>
+	</Operation>
+
+	<!-- Patch Generics -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_Pistol"]/ammoTypes</xpath>
+		<value>
+			<Ammo_Pistol_APS>Bullet_9x19mmPara_APS</Ammo_Pistol_APS>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_PistolMagnum"]/ammoTypes</xpath>
+		<value>
+			<Ammo_PistolMagnum_APS>Bullet_44Magnum_APS</Ammo_PistolMagnum_APS>
+		</value>
+	</Operation>
+</Patch>

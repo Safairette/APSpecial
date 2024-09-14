@@ -1,0 +1,813 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--Value conversion formula for heavy pistol calibers
+		AP-S RHA = AP * 1.3     rounded to the nearest int
+		AP-S MPa = AP * 1.3
+		AP-S Dmg = AP * 0.7    rounded to the nearest int
+		AP-S Speed = Base * 1.2 rounded to the nearest int
+		
+		Recipe cost conversion formula
+		AP-S Steel = Base * 0.7    rounded to the nearest int
+		AP-S Uranium = Base * 0.1  rounded to the nearest int
+		AP-S Chemfuel = Base * 0.1 rounded to the nearest int
+		Work amount = AP * 1.5
+		-->
+
+		
+		<!-- ==================== .44 Magnum ========================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="44MagnumBase">
+		<defName>Ammo_44Magnum_APS</defName>
+		<label>.44 Magnum (AP-S)</label>
+		<graphicData>
+			<texPath>Ammo/APS</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.1</MarketValue>
+		</statBases>
+		<ammoClass>SpecialAP</ammoClass>
+		<cookOffProjectile>Bullet_44Magnum_APS</cookOffProjectile>
+	</ThingDef>
+
+	<!--Base-->
+
+	<ThingDef ParentName="Base44MagnumBullet">
+		<defName>Bullet_44Magnum_APS</defName>
+		<label>.44 Magnum bullet (AP-S)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>7</damageAmountBase>
+			<armorPenetrationSharp>16</armorPenetrationSharp>
+			<armorPenetrationBlunt>30.26</armorPenetrationBlunt>
+			<speed>101</speed>
+		</projectile>
+	</ThingDef>
+
+	<!--HV-->
+
+	<ThingDef ParentName="Base44MagnumBullet">
+		<defName>Bullet_44Magnum_HV_APS</defName>
+		<label>.44 Magnum bullet (AP-S)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>8</damageAmountBase>
+			<armorPenetrationSharp>18</armorPenetrationSharp>
+			<armorPenetrationBlunt>61.15</armorPenetrationBlunt>
+			<speed>131</speed>
+		</projectile>
+	</ThingDef>
+
+	<RecipeDef ParentName="AdvancedAmmoRecipeBase">
+		<defName>MakeAmmo_44Magnum_APS</defName>
+		<label>make .44 Magnum (AP-S) cartridge x500</label>
+		<description>Craft 500 .44 Magnum (AP-S) cartridges.</description>
+		<jobString>Making .44 Magnum (AP-S) cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>17</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Uranium</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Chemfuel</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>Uranium</li>
+				<li>Chemfuel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_44Magnum_APS>500</Ammo_44Magnum_APS>
+		</products>
+		<workAmount>4620</workAmount>
+	</RecipeDef>
+
+	<!-- ==================== .44 SW Special ========================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="44SWSpecialBase">
+		<defName>Ammo_44SWSpecial_APS</defName>
+		<label>.44 S&amp;W Special (AP-S)</label>
+		<graphicData>
+			<texPath>Ammo/APS</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.08</MarketValue>
+		</statBases>
+		<ammoClass>SpecialAP</ammoClass>
+		<cookOffProjectile>Bullet_44SWSpecial_APS</cookOffProjectile>
+	</ThingDef>
+
+	<ThingDef ParentName="Base44SWSpecialBullet">
+		<defName>Bullet_44SWSpecial_APS</defName>
+		<label>.44 S&amp;W Special bullet (AP-S)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>5</damageAmountBase>
+			<armorPenetrationSharp>8</armorPenetrationSharp>
+			<armorPenetrationBlunt>12.32</armorPenetrationBlunt>
+			<speed>77</speed>
+		</projectile>
+	</ThingDef>
+
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_44SWSpecial_APS</defName>
+		<label>make .44 S&amp;W Special (AP-S) cartridge x500</label>
+		<description>Craft 500 .44 S&amp;W Special (AP-S) cartridges.</description>
+		<jobString>Making .44 S&amp;W Special (AP-S) cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>14</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Uranium</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Chemfuel</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>Uranium</li>
+				<li>Chemfuel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_44SWSpecial_APS>500</Ammo_44SWSpecial_APS>
+		</products>
+		<workAmount>3600</workAmount>
+	</RecipeDef>
+
+	<!-- ==================== 4.6x30mm ========================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="46x30mmBase">
+		<defName>Ammo_46x30mm_APS</defName>
+		<label>4.6x30mm (AP-S)</label>
+		<graphicData>
+			<texPath>Ammo/APS</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.04</MarketValue>
+		</statBases>
+		<ammoClass>SpecialAP</ammoClass>
+		<cookOffProjectile>Bullet_46x30mm_APS</cookOffProjectile>
+	</ThingDef>
+
+	<ThingDef ParentName="Base46x30mmBullet">
+		<defName>Bullet_46x30mm_APS</defName>
+		<label>4.6x30mm bullet (AP-S)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>4</damageAmountBase>
+			<armorPenetrationSharp>13</armorPenetrationSharp>
+			<armorPenetrationBlunt>12.64</armorPenetrationBlunt>
+			<speed>140</speed>
+		</projectile>
+	</ThingDef>
+
+	<RecipeDef ParentName="AdvancedAmmoRecipeBase">
+		<defName>MakeAmmo_46x30mm_APS</defName>
+		<label>make 4.6x30mm (AP-S) cartridge x500</label>
+		<description>Craft 500 4.6x30mm (AP-S) cartridges.</description>
+		<jobString>Making 4.6x30mm (AP-S) cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Uranium</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Chemfuel</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>Uranium</li>
+				<li>Chemfuel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_46x30mm_APS>500</Ammo_46x30mm_APS>
+		</products>
+		<workAmount>1440</workAmount>
+	</RecipeDef>
+
+	<!-- ==================== .50 AE ========================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="50AEBase">
+		<defName>Ammo_50AE_APS</defName>
+		<label>.50 AE (AP-S)</label>
+		<graphicData>
+			<texPath>Ammo/APS</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.12</MarketValue>
+		</statBases>
+		<ammoClass>SpecialAP</ammoClass>
+		<cookOffProjectile>Bullet_50AE_APS</cookOffProjectile>
+	</ThingDef>
+
+	<ThingDef ParentName="Base50AEBullet">
+		<defName>Bullet_50AE_APS</defName>
+		<label>.50 AE bullet (AP-S)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>8</damageAmountBase>
+			<armorPenetrationSharp>17</armorPenetrationSharp>
+			<armorPenetrationBlunt>51.17</armorPenetrationBlunt>
+			<speed>113</speed>
+		</projectile>
+	</ThingDef>
+
+	<RecipeDef ParentName="AdvancedAmmoRecipeBase">
+		<defName>MakeAmmo_50AE_APS</defName>
+		<label>make .50 AE (AP-S) cartridge x500</label>
+		<description>Craft 500 .50 AE (AP-S) cartridges.</description>
+		<jobString>Making .50 AE (AP-S) cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>21</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Uranium</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Chemfuel</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>Uranium</li>
+				<li>Chemfuel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_50AE_APS>500</Ammo_50AE_APS>
+		</products>
+		<workAmount>5400</workAmount>
+	</RecipeDef>
+
+	<!-- ==================== 7.5 FK ========================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="75FKBase">
+		<defName>Ammo_75FK_APS</defName>
+		<label>7.5 FK (AP-S)</label>
+		<graphicData>
+			<texPath>Ammo/APS</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.06</MarketValue>
+		</statBases>
+		<ammoClass>SpecialAP</ammoClass>
+		<cookOffProjectile>Bullet_75FK_APS</cookOffProjectile>
+	</ThingDef>
+
+	<ThingDef ParentName="Base75FKBullet">
+		<defName>Bullet_75FK_APS</defName>
+		<label>.50 AE bullet (AP-S)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>6</damageAmountBase>
+			<armorPenetrationSharp>16</armorPenetrationSharp>
+			<armorPenetrationBlunt>29.8</armorPenetrationBlunt>
+			<speed>141</speed>
+		</projectile>
+	</ThingDef>
+
+	<RecipeDef ParentName="AdvancedAmmoRecipeBase">
+		<defName>MakeAmmo_75FK_APS</defName>
+		<label>make 7.5 FK (AP-S) cartridge x500</label>
+		<description>Craft 500 7.5 FK (AP-S) cartridges.</description>
+		<jobString>Making 7.5 FK (AP-S) cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Uranium</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Chemfuel</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>Uranium</li>
+				<li>Chemfuel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_75FK_APS>500</Ammo_75FK_APS>
+		</products>
+		<workAmount>2520</workAmount>
+	</RecipeDef>
+
+	<!-- ==================== .357 Magnum ========================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="357MagnumBase">
+		<defName>Ammo_357Magnum_APS</defName>
+		<label>.357 Magnum (AP-S)</label>
+		<graphicData>
+			<texPath>Ammo/APS</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.08</MarketValue>
+		</statBases>
+		<ammoClass>SpecialAP</ammoClass>
+		<cookOffProjectile>Bullet_357Magnum_APS</cookOffProjectile>
+	</ThingDef>
+
+	<ThingDef ParentName="Base357MagnumBullet">
+		<defName>Bullet_357Magnum_APS</defName>
+		<label>.357 Magnum bullet (AP-S)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>6</damageAmountBase>
+			<armorPenetrationSharp>16</armorPenetrationSharp>
+			<armorPenetrationBlunt>24.18</armorPenetrationBlunt>
+			<speed>108</speed>
+		</projectile>
+	</ThingDef>
+
+	<RecipeDef ParentName="AdvancedAmmoRecipeBase">
+		<defName>MakeAmmo_357Magnum_APS</defName>
+		<label>make .357 Magnum (AP-S) cartridge x500</label>
+		<description>Craft 500 .357 Magnum (AP-S) cartridges.</description>
+		<jobString>Making .357 Magnum (AP-S) cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>13</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Uranium</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Chemfuel</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>Uranium</li>
+				<li>Chemfuel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_357Magnum_APS>500</Ammo_357Magnum_APS>
+		</products>
+		<workAmount>3240</workAmount>
+	</RecipeDef>
+
+	<!-- ==================== .454 Casull ========================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="454CasullBase">
+		<defName>Ammo_454Casull_APS</defName>
+		<label>.454 Casull (AP-S)</label>
+		<graphicData>
+			<texPath>Ammo/APS</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.14</MarketValue>
+		</statBases>
+		<ammoClass>SpecialAP</ammoClass>
+		<cookOffProjectile>Bullet_454Casull_APS</cookOffProjectile>
+	</ThingDef>
+
+	<ThingDef ParentName="Base454CasullBullet">
+		<defName>Bullet_454Casull_APS</defName>
+		<label>.454 Casull bullet (AP-S)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>9</damageAmountBase>
+			<armorPenetrationSharp>18</armorPenetrationSharp>
+			<armorPenetrationBlunt>63.26</armorPenetrationBlunt>
+			<speed>115</speed>
+		</projectile>
+	</ThingDef>
+
+	<RecipeDef ParentName="AdvancedAmmoRecipeBase">
+		<defName>MakeAmmo_454Casull_APS</defName>
+		<label>make .454 Casull (AP-S) cartridge x500</label>
+		<description>Craft 500 .454 Casull (AP-S) cartridges.</description>
+		<jobString>Making .454 Casull (AP-S) cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>24</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Uranium</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Chemfuel</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>Uranium</li>
+				<li>Chemfuel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_454Casull_APS>500</Ammo_454Casull_APS>
+		</products>
+		<workAmount>6120</workAmount>
+	</RecipeDef>
+
+	<!-- ==================== .460 S&W Magnum ========================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="460SWMagnumBase">
+		<defName>Ammo_460SWMagnum_APS</defName>
+		<label>.460 S&amp;W Magnum (AP-S)</label>
+		<graphicData>
+			<texPath>Ammo/APS</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.15</MarketValue>
+		</statBases>
+		<ammoClass>SpecialAP</ammoClass>
+		<cookOffProjectile>Bullet_460SWMagnum_APS</cookOffProjectile>
+	</ThingDef>
+
+	<ThingDef ParentName="Base460SWMagnumBullet">
+		<defName>Bullet_460SWMagnum_APS</defName>
+		<label>.460 Smith Wessen Magnum bullet (AP-S)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>9</damageAmountBase>
+			<armorPenetrationSharp>21</armorPenetrationSharp>
+			<armorPenetrationBlunt>69.24</armorPenetrationBlunt>
+			<speed>123</speed>
+		</projectile>
+	</ThingDef>
+
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_460SWMagnum_APS</defName>
+		<label>make .460 S&amp;W Magnum (AP-S) cartridge x460</label>
+		<description>Craft 500 .460 S&amp;W Magnum (AP-S) cartridges.</description>
+		<jobString>Making .460 S&amp;W Magnum (AP-S) cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Uranium</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Chemfuel</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>Uranium</li>
+				<li>Chemfuel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_460SWMagnum_APS>500</Ammo_460SWMagnum_APS>
+		</products>
+		<workAmount>6480</workAmount>
+	</RecipeDef>
+
+	<!-- ==================== .500 S&W Magnum ========================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="500SWMagnumBase">
+		<defName>Ammo_500SWMagnum_APS</defName>
+		<label>.500 S&amp;W Magnum (AP-S)</label>
+		<graphicData>
+			<texPath>Ammo/APS</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.16</MarketValue>
+		</statBases>
+		<ammoClass>SpecialAP</ammoClass>
+		<cookOffProjectile>Bullet_500SWMagnum_APS</cookOffProjectile>
+	</ThingDef>
+
+		<ThingDef ParentName="Base500SWMagnumBullet">
+		<defName>Bullet_500SWMagnum_APS</defName>
+		<label>.500 Smith Wessen Magnum bullet (AP-S)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>9</damageAmountBase>
+			<armorPenetrationSharp>18</armorPenetrationSharp>
+			<armorPenetrationBlunt>69.97</armorPenetrationBlunt>
+			<speed>120</speed>
+		</projectile>
+	</ThingDef>
+
+		<RecipeDef ParentName="AdvancedAmmoRecipeBase">
+		<defName>MakeAmmo_500SWMagnum_APS</defName>
+		<label>make .500 S&amp;W Magnum (AP-S) cartridge x500</label>
+		<description>Craft 200 .500 S&amp;W Magnum (AP-S) cartridges.</description>
+		<jobString>Making .500 S&amp;W Magnum (AP-S) cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>27</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Uranium</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Chemfuel</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>Uranium</li>
+				<li>Chemfuel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_500SWMagnum_APS>500</Ammo_500SWMagnum_APS>
+		</products>
+		<workAmount>6840</workAmount>
+	</RecipeDef>
+
+	<!-- ==================== 7.62x25mm Tokarev ========================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="762x25mmTokarevBase">
+		<defName>Ammo_762x25mmTokarev_APS</defName>
+		<label>7.62x25mm Tokarev (AP-S)</label>
+		<graphicData>
+			<texPath>Ammo/APS</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.05</MarketValue>
+		</statBases>
+		<ammoClass>SpecialAP</ammoClass>
+		<cookOffProjectile>Bullet_762x25mmTokarev_APS</cookOffProjectile>
+	</ThingDef>
+
+	<ThingDef ParentName="Base762x25mmTokarevBullet">
+		<defName>Bullet_762x25mmTokarev_APS</defName>
+		<label>7.62mm Tokarev bullet (AP-S)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>5</damageAmountBase>
+			<armorPenetrationSharp>11</armorPenetrationSharp>
+			<armorPenetrationBlunt>17.65</armorPenetrationBlunt>
+			<speed>122</speed>
+		</projectile>
+	</ThingDef>
+
+	<RecipeDef ParentName="AdvancedAmmoRecipeBase">
+		<defName>MakeAmmo_762x25mmTokarev_APS</defName>
+		<label>make 7.62x25mm Tokarev (AP-S) cartridge x500</label>
+		<description>Craft 500 7.62x25mm Tokarev (AP-S) cartridges.</description>
+		<jobString>Making 7.62x25mm Tokarev (AP-S) cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>8</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Uranium</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Chemfuel</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>Uranium</li>
+				<li>Chemfuel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_762x25mmTokarev_APS>500</Ammo_762x25mmTokarev_APS>
+		</products>
+		<workAmount>2160</workAmount>
+	</RecipeDef>
+
+	<!-- ==================== 5.7x28mm ========================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="FN57x29mmBase">
+		<defName>Ammo_FN57x28mm_APS</defName>
+		<label>FN 5.7x28mm (AP-S)</label>
+		<graphicData>
+			<texPath>Ammo/APS</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.04</MarketValue>
+		</statBases>
+		<ammoClass>SpecialAP</ammoClass>
+		<cookOffProjectile>Bullet_FN57x28mm_APS</cookOffProjectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseFN57x28mmBullet">
+		<defName>Bullet_FN57x28mm_APS</defName>
+		<label>FN 5.7mm bullet (AP-S)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>4</damageAmountBase>
+			<armorPenetrationSharp>13</armorPenetrationSharp>
+			<armorPenetrationBlunt>14.27</armorPenetrationBlunt>
+			<speed>148</speed>
+		</projectile>
+	</ThingDef>
+
+		<RecipeDef ParentName="AdvancedAmmoRecipeBase">
+		<defName>MakeAmmo_FN57x28mm_APS</defName>
+		<label>make FN 5.7x28mm (AP-S) cartridge x500</label>
+		<description>Craft 500 FN 5.7x28mm (AP-S) cartridges.</description>
+		<jobString>Making FN 5.7x28mm (AP-S) cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>7</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Uranium</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Chemfuel</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>Uranium</li>
+				<li>Chemfuel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_FN57x28mm_APS>500</Ammo_FN57x28mm_APS>
+		</products>
+		<workAmount>1800</workAmount>
+	</RecipeDef>
+
+</Defs>
