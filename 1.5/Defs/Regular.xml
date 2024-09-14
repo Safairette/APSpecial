@@ -96,7 +96,7 @@
 		<statBases>
 			<MarketValue>0.05</MarketValue>
 		</statBases>
-		<ammoClass>ArmorPiercing</ammoClass>
+		<ammoClass>SpecialAP</ammoClass>
 		<cookOffProjectile>Bullet_9x18mmMakarov_APS</cookOffProjectile>
 	</ThingDef>
 
@@ -167,7 +167,7 @@
 		<statBases>
 			<MarketValue>0.05</MarketValue>
 		</statBases>
-		<ammoClass>ArmorPiercing</ammoClass>
+		<ammoClass>SpecialAP</ammoClass>
 		<cookOffProjectile>Bullet_9x19mmPara_APS</cookOffProjectile>
 	</ThingDef>
 

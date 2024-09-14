@@ -56,8 +56,8 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>Steel</li>
-                <li>Uranium</li>
-                <li>Chemfuel</li>
+        <li>Uranium</li>
+        <li>Chemfuel</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
@@ -116,8 +116,8 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>Steel</li>
-                <li>Uranium</li>
-                <li>Chemfuel</li>
+        <li>Uranium</li>
+        <li>Chemfuel</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
