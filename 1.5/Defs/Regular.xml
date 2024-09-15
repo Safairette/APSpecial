@@ -111,7 +111,7 @@
 		</projectile>
 	</ThingDef>
 
-	<RecipeDef ParentName="AmmoRecipeBase">
+	<RecipeDef ParentName="AdvancedAmmoRecipeBase">
 		<defName>MakeAmmo_9x18mmMakarov_APS</defName>
 		<label>make 9x18mm Makarov (AP-S) cartridge x500</label>
 		<description>Craft 500 9x18mm Makarov (AP-S) cartridges.</description>
@@ -197,7 +197,7 @@
 		</projectile>
 	</ThingDef>
 
-	<RecipeDef ParentName="AmmoRecipeBase">
+	<RecipeDef ParentName="AdvancedAmmoRecipeBase">
 		<defName>MakeAmmo_9x19mmPara_APS</defName>
 		<label>make 9x19mm Parabellum (AP-S) cartridge x500</label>
 		<description>Craft 500 9x19mm Parabellum (AP-S) cartridges.</description>
@@ -481,7 +481,7 @@
 		</projectile>
 	</ThingDef>
 
-	<RecipeDef ParentName="AmmoRecipeBase">
+	<RecipeDef ParentName="AdvancedAmmoRecipeBase">
 		<defName>MakeAmmo_22LR_APS</defName>
 		<label>make .22 LR (AP-S) cartridge x500</label>
 		<description>Craft 500 .22 LR (AP-S) cartridges.</description>
@@ -552,7 +552,7 @@
 		</projectile>
 	</ThingDef>
 
-	<RecipeDef ParentName="AmmoRecipeBase">
+	<RecipeDef ParentName="AdvancedAmmoRecipeBase">
 		<defName>MakeAmmo_22Short_APS</defName>
 		<label>make .22 Short (AP-S) cartridge x500</label>
 		<description>Craft 500 .22 Short (AP-S) cartridges.</description>
@@ -906,7 +906,7 @@
 		</projectile>
 	</ThingDef>
 
-	<RecipeDef ParentName="AmmoRecipeBase">
+	<RecipeDef ParentName="AdvancedAmmoRecipeBase">
 		<defName>MakeAmmo_38Super_APS</defName>
 		<label>make .38 Super (AP-S) cartridge x500</label>
 		<description>Craft 500 .38 Super (AP-S) cartridges.</description>
@@ -977,7 +977,7 @@
 		</projectile>
 	</ThingDef>
 
-	<RecipeDef ParentName="AmmoRecipeBase">
+	<RecipeDef ParentName="AdvancedAmmoRecipeBase">
 		<defName>MakeAmmo_38SW_APS</defName>
 		<label>make .38 S&amp;W (AP-S) cartridge x500</label>
 		<description>Craft 500 .38 S&amp;W (AP-S) cartridges.</description>
@@ -1345,7 +1345,7 @@
 		</projectile>
 	</ThingDef>
 
-	<RecipeDef ParentName="AmmoRecipeBase">
+	<RecipeDef ParentName="AdvancedAmmoRecipeBase">
 		<defName>MakeAmmo_45Schofield_APS</defName>
 		<label>make .45 Schofield (AP-S) cartridge x500</label>
 		<description>Craft 500 .45 Schofield (AP-S) cartridges.</description>
@@ -1487,7 +1487,7 @@
 		</projectile>
 	</ThingDef>
 
-	<RecipeDef ParentName="AmmoRecipeBase">
+	<RecipeDef ParentName="AdvancedAmmoRecipeBase">
 		<defName>MakeAmmo_357SIG_APS</defName>
 		<label>make .357 SIG (AP-S) cartridge x500</label>
 		<description>Craft 500 .357 SIG (AP-S) cartridges.</description>

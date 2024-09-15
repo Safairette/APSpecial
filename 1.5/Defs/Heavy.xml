@@ -127,7 +127,7 @@
 		</projectile>
 	</ThingDef>
 
-	<RecipeDef ParentName="AmmoRecipeBase">
+	<RecipeDef ParentName="AdvancedAmmoRecipeBase">
 		<defName>MakeAmmo_44SWSpecial_APS</defName>
 		<label>make .44 S&amp;W Special (AP-S) cartridge x500</label>
 		<description>Craft 500 .44 S&amp;W Special (AP-S) cartridges.</description>
@@ -553,7 +553,7 @@
 		</projectile>
 	</ThingDef>
 
-	<RecipeDef ParentName="AmmoRecipeBase">
+	<RecipeDef ParentName="AdvancedAmmoRecipeBase">
 		<defName>MakeAmmo_460SWMagnum_APS</defName>
 		<label>make .460 S&amp;W Magnum (AP-S) cartridge x460</label>
 		<description>Craft 500 .460 S&amp;W Magnum (AP-S) cartridges.</description>

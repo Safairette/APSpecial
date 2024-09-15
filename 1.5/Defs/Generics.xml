@@ -22,7 +22,7 @@
 		<cookOffProjectile>Bullet_9x19mmPara_APS</cookOffProjectile>
 	</ThingDef>
 
-    <RecipeDef ParentName="AmmoRecipeBase">
+    <RecipeDef ParentName="AdvancedAmmoRecipeBase">
 		<defName>MakeAmmo_Pistol_APS</defName>
 		<label>make pistol (AP-S) cartridge x500</label>
 		<description>Craft 500 pistol (AP-S) cartridges.</description>
@@ -82,7 +82,7 @@
 		<cookOffProjectile>Bullet_44Magnum_APS</cookOffProjectile>
 	</ThingDef>
 
-    <RecipeDef ParentName="AmmoRecipeBase">
+    <RecipeDef ParentName="AdvancedAmmoRecipeBase">
 		<defName>MakeAmmo_PistolMagnum_APS</defName>
 		<label>make magnum pistol (AP-S) cartridge x500</label>
 		<description>Craft 500 magnum pistol (AP-S) cartridges.</description>
