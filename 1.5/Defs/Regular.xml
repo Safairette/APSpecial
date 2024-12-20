@@ -814,7 +814,7 @@
 		<defName>Ammo_38Special_APS</defName>
 			<label>.38 Special (AP-S)</label>
 			<graphicData>
-				<texPath>Ammo/APS</texPath>
+				<texPath>Ammo/APSRev</texPath>
 				<graphicClass>Graphic_StackCount</graphicClass>
 			</graphicData>
 			<statBases>
@@ -1238,7 +1238,7 @@
 		<defName>Ammo_45Colt_APS</defName>
 		<label>.45 Colt (AP-S)</label>
 		<graphicData>
-			<texPath>Ammo/APS</texPath>
+			<texPath>Ammo/APSRev</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -1324,7 +1324,7 @@
 		<defName>Ammo_45Schofield_APS</defName>
 		<label>.45 Schofield (AP-S)</label>
 		<graphicData>
-			<texPath>Ammo/APS</texPath>
+			<texPath>Ammo/APSRev</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -1608,7 +1608,7 @@
 		<defName>Ammo_455Webley_APS</defName>
 		<label>.455 Webley (AP-S)</label>
 		<graphicData>
-			<texPath>Ammo/APS</texPath>
+			<texPath>Ammo/APSRev</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -1679,7 +1679,7 @@
 		<defName>Ammo_762x38mmR_APS</defName>
 		<label>7.62x38mmR (AP-S)</label>
 		<graphicData>
-			<texPath>Ammo/APS</texPath>
+			<texPath>Ammo/APSRev</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>

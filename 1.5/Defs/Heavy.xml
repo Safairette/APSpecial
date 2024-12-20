@@ -20,7 +20,7 @@
 		<defName>Ammo_44Magnum_APS</defName>
 		<label>.44 Magnum (AP-S)</label>
 		<graphicData>
-			<texPath>Ammo/APS</texPath>
+			<texPath>Ammo/APSRev</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -106,7 +106,7 @@
 		<defName>Ammo_44SWSpecial_APS</defName>
 		<label>.44 S&amp;W Special (AP-S)</label>
 		<graphicData>
-			<texPath>Ammo/APS</texPath>
+			<texPath>Ammo/APSRev</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -390,7 +390,7 @@
 		<defName>Ammo_357Magnum_APS</defName>
 		<label>.357 Magnum (AP-S)</label>
 		<graphicData>
-			<texPath>Ammo/APS</texPath>
+			<texPath>Ammo/APSRev</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -461,7 +461,7 @@
 		<defName>Ammo_454Casull_APS</defName>
 		<label>.454 Casull (AP-S)</label>
 		<graphicData>
-			<texPath>Ammo/APS</texPath>
+			<texPath>Ammo/APSRev</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -532,7 +532,7 @@
 		<defName>Ammo_460SWMagnum_APS</defName>
 		<label>.460 S&amp;W Magnum (AP-S)</label>
 		<graphicData>
-			<texPath>Ammo/APS</texPath>
+			<texPath>Ammo/APSRev</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -603,7 +603,7 @@
 		<defName>Ammo_500SWMagnum_APS</defName>
 		<label>.500 S&amp;W Magnum (AP-S)</label>
 		<graphicData>
-			<texPath>Ammo/APS</texPath>
+			<texPath>Ammo/APSRev</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
