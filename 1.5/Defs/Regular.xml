@@ -956,7 +956,7 @@
 		<defName>Ammo_38SW_APS</defName>
 		<label>.38 S&amp;W (AP-S)</label>
 		<graphicData>
-			<texPath>Ammo/APS</texPath>
+			<texPath>Ammo/APSRev</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>

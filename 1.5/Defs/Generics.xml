@@ -72,7 +72,7 @@
 		<defName>Ammo_PistolMagnum_APS</defName>
 		<label>magnum pistol cartridge (AP-S)</label>
 		<graphicData>
-			<texPath>Ammo/APS</texPath>
+			<texPath>Ammo/APSRev</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
